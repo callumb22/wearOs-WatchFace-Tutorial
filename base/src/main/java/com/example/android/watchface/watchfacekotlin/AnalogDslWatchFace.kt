@@ -33,12 +33,14 @@ class AnalogDslWatchFace : AbstractKotlinWatchFace() {
          * detailed explanation of each field.
          */
         return analogWatchFaceStyle {
-            watchFaceColors { main = Color.MAGENTA
-            highlight = Color.parseColor("#BB0000")
-            background = Color.WHITE}
+            watchFaceColors { main = Color.WHITE
+            highlight = Color.parseColor("#000000")
+            background = Color.BLACK}
             watchFaceDimensions { hourHandRadiusRatio = 0.2f
                                     minuteHandRadiusRatio = 0.5f
                                     secondHandRadiusRatio = 0.9f}
+
+            watchFaceBackgroundImage { backgroundImageResource = R.drawable.background_image }
         }
     }
 }
